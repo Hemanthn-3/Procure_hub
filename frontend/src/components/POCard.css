@@ -1,0 +1,70 @@
+.po-card {
+  padding: var(--space-6);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.po-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.po-card__id {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent-blue);
+  letter-spacing: 0.04em;
+  font-family: 'Courier New', monospace;
+}
+
+.po-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.po-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.po-card__detail {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.po-card__detail svg {
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.po-card__detail strong {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.po-card__actions {
+  padding-top: var(--space-2);
+}
+
+.po-card__footer {
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-border);
+}
+
+.po-card__date {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}

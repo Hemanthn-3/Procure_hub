@@ -1,0 +1,168 @@
+/* ═══════════════════════════════════════════════════════════
+   Supplier Bidding Box Styles
+   ═══════════════════════════════════════════════════════════ */
+
+.bidbox__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) 0;
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  margin-bottom: var(--space-6);
+  transition: color var(--transition-fast);
+}
+
+.bidbox__back:hover {
+  color: var(--color-accent-blue);
+}
+
+/* Layout */
+.bidbox__layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .bidbox__layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Details Card */
+.bidbox__details {
+  overflow: hidden;
+}
+
+.bidbox__details:hover {
+  transform: none;
+}
+
+.bidbox__details-inner {
+  padding: var(--space-8);
+}
+
+.bidbox__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.bidbox__rfq-id {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent-blue);
+  letter-spacing: 0.04em;
+  font-family: 'Courier New', monospace;
+}
+
+.bidbox__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  line-height: 1.3;
+  margin-bottom: var(--space-6);
+}
+
+.bidbox__info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.bidbox__info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.bidbox__info-item svg {
+  color: var(--color-accent-blue);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.bidbox__info-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bidbox__info-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: var(--font-weight-medium);
+}
+
+.bidbox__info-value {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+
+/* Form Card */
+.bidbox__form-card {
+  position: sticky;
+  top: 80px;
+}
+
+.bidbox__form-card:hover {
+  transform: none;
+}
+
+.bidbox__form-inner {
+  padding: var(--space-8);
+}
+
+.bidbox__form-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-6);
+}
+
+.bidbox__form-title svg {
+  color: var(--color-accent-emerald);
+}
+
+.bidbox__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+/* Amount Input with $ prefix */
+.bidbox__input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bidbox__input-prefix {
+  position: absolute;
+  left: var(--space-4);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-muted);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bidbox__amount-input {
+  padding-left: var(--space-8) !important;
+}

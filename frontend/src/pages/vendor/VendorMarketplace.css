@@ -1,0 +1,69 @@
+/* ═══════════════════════════════════════════════════════════
+   Vendor Marketplace Styles
+   ═══════════════════════════════════════════════════════════ */
+
+.marketplace__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.marketplace__search {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-5);
+  background: var(--color-bg-glass);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  flex: 1;
+  max-width: 400px;
+  transition: border-color var(--transition-fast);
+}
+
+.marketplace__search:focus-within {
+  border-color: var(--color-accent-blue);
+  box-shadow: 0 0 0 3px var(--color-accent-blue-glow);
+}
+
+.marketplace__search svg {
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.marketplace__search-input {
+  border: none;
+  background: none;
+  outline: none;
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  width: 100%;
+}
+
+.marketplace__search-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.marketplace__count {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.marketplace__count-number {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-extrabold);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.marketplace__count-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}

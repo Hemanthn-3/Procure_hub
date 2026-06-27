@@ -1,0 +1,6 @@
+MySQL connection pool created successfully
+MySQL connected successfully
+ProcureHub API server running on http://localhost:5000
+Health check: http://localhost:5000/api/v1/health
+ * Serving Flask app 'src.app'
+ * Debug mode: on
